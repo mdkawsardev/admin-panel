@@ -137,23 +137,23 @@
                     <!-- Search -->
                     <div class="hidden md:flex items-center bg-slate-700 rounded-lg px-3 py-2">
                         <i class="fas fa-search text-slate-400 mr-2"></i>
-                        <input type="text" placeholder="Search..." class="bg-transparent border-none outline-none text-sm w-48 focus:w-64 transition-all">
+                        <input type="text" placeholder="Search..." class="bg-transparent border-none outline-none text-sm w-48 focus:w-64 transition-all" data-search-input>
                     </div>
 
                     <!-- Notifications -->
-                    <button title="Notifications" class="relative p-2 text-slate-400 hover:text-white transition-colors">
+                    <button title="Notifications" class="relative p-2 text-slate-400 hover:text-white transition-colors" data-notification-btn>
                         <i class="fas fa-bell text-xl"></i>
                         <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
                     </button>
 
                     <!-- Messages -->
-                    <button title="Messages" class="relative p-2 text-slate-400 hover:text-white transition-colors">
+                    <button title="Messages" class="relative p-2 text-slate-400 hover:text-white transition-colors" data-messages-btn>
                         <i class="fas fa-envelope text-xl"></i>
                         <span class="absolute top-0 right-0 w-2 h-2 bg-green-500 rounded-full"></span>
                     </button>
 
                     <!-- User Dropdown -->
-                    <div class="flex items-center gap-3 cursor-pointer hover:bg-slate-700 px-3 py-2 rounded-lg transition-colors">
+                    <div class="flex items-center gap-3 cursor-pointer hover:bg-slate-700 px-3 py-2 rounded-lg transition-colors" data-user-dropdown>
                         <img src="https://ui-avatars.com/api/?name=John+Doe&background=3b82f6&color=fff" alt="User" class="w-8 h-8 rounded-full">
                         <span class="hidden md:block font-medium">John Doe</span>
                         <i class="fas fa-chevron-down text-xs text-slate-400"></i>
@@ -167,7 +167,7 @@
             <!-- Stats Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <!-- Total Revenue -->
-                <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-6 shadow-lg">
+                <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-6 shadow-lg" data-stat="revenue">
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-blue-200 text-sm font-medium">Total Revenue</p>
@@ -184,7 +184,7 @@
                 </div>
 
                 <!-- Total Orders -->
-                <div class="bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl p-6 shadow-lg">
+                <div class="bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl p-6 shadow-lg" data-stat="orders">
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-purple-200 text-sm font-medium">Total Orders</p>
@@ -201,7 +201,7 @@
                 </div>
 
                 <!-- Total Customers -->
-                <div class="bg-gradient-to-br from-green-600 to-green-700 rounded-xl p-6 shadow-lg">
+                <div class="bg-gradient-to-br from-green-600 to-green-700 rounded-xl p-6 shadow-lg" data-stat="customers">
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-green-200 text-sm font-medium">Total Customers</p>
@@ -218,7 +218,7 @@
                 </div>
 
                 <!-- Conversion Rate -->
-                <div class="bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl p-6 shadow-lg">
+                <div class="bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl p-6 shadow-lg" data-stat="conversion">
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-orange-200 text-sm font-medium">Conversion Rate</p>
@@ -428,7 +428,7 @@
     </main>
 
     <!-- Overlay for mobile sidebar -->
-    <div id="overlay" class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden" onclick="toggleSidebar()"></div>
+    <div id="overlay" class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden"></div>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
 </body>
